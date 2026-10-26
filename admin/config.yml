@@ -1,0 +1,21 @@
+
+backend:
+  name: github
+  repo: shiraksafaryan1-debug/shirak-safaryan-website
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "articles"
+    label: "Analysis & Opinion"
+    folder: "content/articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publication Date", name: "date", widget: "datetime"}
+      - {label: "Summary", name: "description", widget: "text"}
+      - {label: "Article", name: "body", widget: "markdown"}
+      
